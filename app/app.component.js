@@ -31,9 +31,9 @@ System.register(['angular2/core', 'angular2/router', './home/home.component', '.
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <nav class=\"navbar navbar-default\">\n      <div class=\"container-fluid\">\n        <div class=\"row\">\n            <div class=\"col-xs-8\">\n              <ul class=\"nav navbar-nav\">\n              <li>\n                <a class=\"navbar-link\" [routerLink]=\"['Home']\">\n                  Les Girard\n                </a>\n              </li>\n                <li>\n                  <a class=\"navbar-link\" [routerLink]=\"['Feed']\">\n                    Nouvelles\n                  </a>\n                </li>\n              </ul>\n            </div>\n          </div>\n      </div>\n    </nav>\n    <div>\n        <router-outlet></router-outlet>\n    </div>\n    ",
+                        template: "\n    <nav>\n        <div class=\"topbar\">\n            <a [routerLink]=\"['Home']\">\n              Les Girard\n            </a>\n            <a [routerLink]=\"['Feed']\">\n                Nouvelles\n            </a>\n        </div>\n    </nav>\n    <div>\n        <router-outlet></router-outlet>\n    </div>\n    ",
                         directives: [router_1.ROUTER_DIRECTIVES],
-                        styles: ["\n      .navbar-nav,.navbar-nav > li {\n        float:left;\n      }\n      .navbar-nav{\n        margin: 7.5px -15px;\n      }\n    "]
+                        styleUrls: ['app/app.css']
                     }),
                     router_1.RouteConfig([
                         {

@@ -6,39 +6,22 @@ import {FeedComponent} from './feed/feed.component';
 @Component({
     selector: 'my-app',
     template: `
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-8">
-              <ul class="nav navbar-nav">
-              <li>
-                <a class="navbar-link" [routerLink]="['Home']">
-                  Les Girard
-                </a>
-              </li>
-                <li>
-                  <a class="navbar-link" [routerLink]="['Feed']">
-                    Nouvelles
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-      </div>
+    <nav>
+        <div class="topbar">
+            <a [routerLink]="['Home']">
+              Les Girard
+            </a>
+            <a [routerLink]="['Feed']">
+                Nouvelles
+            </a>
+        </div>
     </nav>
     <div>
         <router-outlet></router-outlet>
     </div>
     `,
     directives: [ROUTER_DIRECTIVES],
-    styles: [`
-      .navbar-nav,.navbar-nav > li {
-        float:left;
-      }
-      .navbar-nav{
-        margin: 7.5px -15px;
-      }
-    `]
+    styleUrls: ['app/app.css']
 })
 
 @RouteConfig([

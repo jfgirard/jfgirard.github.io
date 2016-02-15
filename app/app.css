@@ -1,0 +1,11 @@
+.topbar{
+  padding: 10px 0;
+  background-color:rgba(0, 0, 0, 0.8);;
+}
+.topbar a{
+  text-transform: uppercase;
+  padding: 10px 10px 10px 35px;
+  outline: 0;
+  text-decoration: none;
+  color: white;
+}

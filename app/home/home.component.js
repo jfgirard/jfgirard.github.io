@@ -22,7 +22,7 @@ System.register(['angular2/core'], function(exports_1) {
                 HomeComponent = __decorate([
                     core_1.Component({
                         selector: 'home-component',
-                        template: "\n        <div class=\"text-center\">\n          <h1 >Famille Girard</h1>\n          <p>Bienvenue au site familliale pour ce tenir au courant\n            des derni\u00E8res nouvelles et partager!\n          </p>\n        </div>\n    "
+                        template: "\n        <div class=\"text-center text-block\">\n          <h1>Famille Girard</h1>\n          <p>Bienvenue au site familliale pour ce tenir au courant\n            des derni\u00E8res nouvelles et partager!\n          </p>\n          <h2>Annonces</h2>\n        </div>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], HomeComponent);
